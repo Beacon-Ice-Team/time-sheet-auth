@@ -12,4 +12,6 @@ public class AuthPostResponse {
 
     private TimeSheetManagement timeSheetManagement;
 
+    private String redirectUrl;
+
 }

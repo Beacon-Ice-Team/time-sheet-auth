@@ -17,8 +17,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 import javax.servlet.http.HttpServletResponse;
 
-import static com.beaconice.authservice.constant.Constant.JWT_TOKEN_COOKIE_NAME;
-import static com.beaconice.authservice.constant.Constant.SIGNING_KEY;
+import static com.beaconice.authservice.constant.Constant.*;
 
 
 @RestController
@@ -52,7 +51,7 @@ public class AuthController {
             CookieUtil.create(httpServletResponse, JWT_TOKEN_COOKIE_NAME, token, false, -1, "localhost");
 
             authPostResponse.setTimeSheetManagement(timeSheetManagement);
-
+            authPostResponse.setRedirectUrl(DEFAULT_URL);
             responseEntity = ResponseEntity.ok()
                     .body(authPostResponse);
         }
