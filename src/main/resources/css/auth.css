@@ -1,0 +1,257 @@
+/******************************************/
+/* general */
+
+* {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    box-sizing: border-box;
+    -webkit-overflow-scrolling: touch;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",monospace;
+}
+
+body {
+    background-color: #F6F8F6;
+    font-family: 'Roboto';
+}
+
+html, body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #F6F8F6;
+}
+
+.box-shadow {
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,.01), 0 3px 1px -2px rgba(0,0,0,.05), 0 1px 5px 0 rgba(0,0,0,.12);
+}
+
+.text-shadow {
+    text-shadow: 2px 2px 2px rgba(0,0,0,.14);
+}
+
+.cursor-pointer {
+    cursor: pointer;
+}
+
+.btn {
+    border-radius: 2px;
+}
+
+.btn:hover {
+    color: white;
+}
+
+.btn:focus,.btn:active {
+    outline: none !important;
+    box-shadow: none;
+}
+
+.top-split-line {
+    border-top: 1px solid #F5F5F5;
+}
+
+.bottom-split-line {
+    border-bottom: 1px solid #F5F5F5;
+}
+
+.left-split-line {
+    border-left: 1px solid #F5F5F5;
+}
+
+.right-split-line {
+    border-right: 1px solid #F5F5F5;
+}
+
+.color-title {
+    color: #909495;
+}
+
+.color-dark {
+    color: #515B5B;
+}
+
+.color-light {
+    color: #babec0;
+}
+
+.color-blue {
+    color: #3EC5F2;
+}
+
+.color-red {
+    color: #c63316;
+}
+
+.color-green {
+    color: #29C178;
+}
+
+.error {
+    padding: 5px;
+    font-size: 14px;
+}
+
+.form-control {
+    border: 1px solid #F5F5F5;
+    border-radius: 2px !important;
+}
+
+.form-control:disabled, .form-control[read-only] {
+    background-color: #F5F5F5;
+}
+
+input[type=date].form-control, input.form-control::placeholder {
+    color: #F5F5F5;
+}
+
+input[type=date].form-control.active, input[type=date].form-control:focus {
+    color: #515B5B;
+}
+
+.error-input {
+    border: 1px solid #c63316 !important;
+}
+
+.form-control:focus, .form-control:active {
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,.01), 0 3px 1px -2px rgba(0,0,0,.05), 0 1px 5px 0 rgba(0,0,0,.12);
+}
+
+.form-control[readonly]:focus, .form-control[readonly]:active {
+    box-shadow: none;
+}
+
+.dataTables_filter {
+    display: none;
+}
+
+.dataTables_wrapper {
+    color: #515B5B;
+}
+
+.dataTables_wrapper .dataTables_paginate .paginate_button:hover {
+    background: #f35c5c;
+    border: 1px solid transparent;
+}
+
+.dataTables_wrapper .dataTables_paginate .paginate_button.current, .dataTables_wrapper .dataTables_paginate .paginate_button.current:hover {
+    background: #3F66A1;
+    border: 1px solid transparent;
+    color: white !important;
+}
+
+/******************************************/
+/* login page */
+
+.bg-container, .page-bg-container {
+    height: 40%;
+    background-color: #003282;
+    z-index: 1;
+}
+
+.bg-container > div {
+    margin-top: 5rem !important;
+}
+
+.page-bg-container > div {
+    margin-top: 3rem !important;
+}
+
+@media ( max-width : 768px) {
+    .bg-container > div {
+        margin-top: 7rem !important;
+    }
+
+    .page-bg-container > div {
+        margin-top: 5rem !important;
+    }
+}
+
+.logo {
+    width: 36px;
+    margin-right: 10px;
+}
+
+.title, .subtitle {
+    color: white;
+}
+
+.title {
+    font-family: 'Bitter', serif;
+    font-weight: bold;
+    font-size: 22px;
+}
+
+.subtitle {
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 11px;
+    letter-spacing: 2px;
+}
+
+.login-container {
+    width: 50%;
+    max-width: 500px;
+    z-index: 2;
+}
+
+@media ( max-width : 768px) {
+    .login-container {
+        width: 85%;
+    }
+}
+
+.login-title {
+    font-weight: bold;
+    line-height: 48px;
+    border-bottom: 4px solid #3EC5F2;
+}
+
+.page-title {
+    font-weight: bold;
+    line-height: 32px;
+}
+
+.page-desc {
+    font-size: 11px;
+}
+
+.register-link {
+    font-size: 14px;
+}
+
+@media ( max-width : 768px) {
+    .form-group {
+        margin-bottom: 0.5rem;
+    }
+    .auth-label {
+        font-size: 14px;
+    }
+}
+
+.auth-label {
+    font-weight: 400;
+    font-size: 15px;
+}
+
+.login-btn {
+    line-height: 1;
+    font-size: 16px;
+    padding: 10px 20px;
+    color: white;
+    background-color: #3EC5F2;
+}
+
+.login-btn:hover {
+    background-color: #15B3DC;
+}
+
+/******************************************/
+
